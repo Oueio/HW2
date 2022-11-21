@@ -1,4 +1,4 @@
-#include "REDBLACKTree.h"
+#include "RedBlackTree.h"
 
 template<typename type>
 void RedBlackTree<type>::Insert(Node<type> *node) {

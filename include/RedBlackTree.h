@@ -1,5 +1,5 @@
-#ifndef RED_BLACK_TREE_H
-#define RED_BLACK_TREE_H
+#ifndef REDBLACKTREE_H
+#define REDBLACKTREE_H
 
 #include "Node.h"
 
@@ -39,4 +39,4 @@ public:
 extern template
 class RedBlackTree<double>;
 
-#endif //RED_BLACK_TREE_H
+#endif //REDBLACKTREE_H
