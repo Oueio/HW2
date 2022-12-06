@@ -9,8 +9,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 include_directories("include/")
 
 set(SRCS
-        src/Node.cpp
-        src/RedBlackTree.cpp)
+        )
 
 add_executable(${PROJECT_NAME} main.cpp
         ${SRCS}

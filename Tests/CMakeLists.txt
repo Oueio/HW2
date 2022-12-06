@@ -13,8 +13,6 @@ endif ()
 include_directories("..include/")
 
 set(SRCS
-        ../src/Node.cpp
-        ../src/RedBlackTree.cpp
         )
 
 file(GLOB SOURCES
@@ -24,5 +22,6 @@ file(GLOB SOURCES
 find_package(GTest REQUIRED)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
+add_executable(${PROJECT_NAME}_set test_set.cpp)
 
 target_link_libraries(${PROJECT_NAME} GTest::gtest_main)

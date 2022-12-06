@@ -65,12 +65,20 @@ jobs:
         run: |
           mkdir -p ${{ github.workspace }}/build
           mv ${{ github.workflow }}/build/* ${{ github.workspace }}/build
-          
+
+      - name: Test_base
+        run: |
+          cd ${{ github.workspace }}/build/Tests/
+          chmod 777 TEST_set
+          ./TEST_set    
+
       - name: Test
         run: |
           cd ${{ github.workspace }}/build/Tests/
           chmod 777 TEST
           ./TEST
+          
+      
           
 
   sanitisers:
