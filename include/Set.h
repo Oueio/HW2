@@ -265,8 +265,8 @@ typename Set<type>::iterator &Set<type>::iterator::operator++(int unused) {
                 it = it->parent;
             }
         } while (it and it->key < key and it->parent);
-        return *this;
     }
+    return *this;
 }
 
 template<typename type>

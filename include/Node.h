@@ -41,7 +41,7 @@ Node<type> *Node<type>::Add(Node<type> *node) {
             left->parent = this;
             return left;
         } else {
-            left->Add(node);
+            return left->Add(node);
         }
     } else {
         if (!right) {
@@ -49,10 +49,9 @@ Node<type> *Node<type>::Add(Node<type> *node) {
             right->parent = this;
             return right;
         } else {
-            right->Add(node);
+            return right->Add(node);
         }
     }
-    return nullptr;
 }
 
 template<typename type>

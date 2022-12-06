@@ -64,7 +64,6 @@ void RedBlackTree<type>::Insert(type _key) {
         Node<type> *temp = root->Add(_key);
         FixColor(temp);
         FixRoot();
-        return;
     }
 }
 
