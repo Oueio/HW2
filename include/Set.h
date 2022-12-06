@@ -194,6 +194,7 @@ typename Set<type>::iterator Set<type>::lower_bound(type _key) {
             return i;
         }
     }
+    return end();
 }
 
 template<typename type>
@@ -218,6 +219,7 @@ typename Set<type>::iterator Set<type>::lower_bound(type _key) const {
             return i;
         }
     }
+    return end();
 }
 
 template<typename type>

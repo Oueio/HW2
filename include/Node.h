@@ -52,6 +52,7 @@ Node<type> *Node<type>::Add(Node<type> *node) {
             right->Add(node);
         }
     }
+    return nullptr;
 }
 
 template<typename type>
